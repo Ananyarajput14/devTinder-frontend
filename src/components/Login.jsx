@@ -26,13 +26,19 @@ const Login = () => {
         { withCredentials: true }
       );
       // console.log(res.data.user)
-      dispatch(addUser(res.data.user));
-      return navigate("/");
-    } catch (err) {
-      setError(err.response.data);
-      console.log(err);
+        if (res.data && res.data._id) {
+      dispatch(addUser(res.data)); // you're probably returning user directly from backend
+      navigate("/");
+    } else {
+      throw new Error("Invalid user data received");
     }
-  };
+  } catch (err) {
+    const errorMessage =
+      err.response?.data || "Login failed. Please try again.";
+    setError(errorMessage);
+    console.log("Login error:", err);
+  }
+};
 
   const handleSignUp = async () => {
     try {

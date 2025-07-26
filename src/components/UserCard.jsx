@@ -9,8 +9,6 @@ const UserCard = ({ user }) => {
   const { _id, firstName, lastName, age, gender, about, photoUrl, skills } =
     user;
 
-  console.log("Extracted Skills:", skills); // Debugging
-
   const handleSendRequest = async (status, userId) => {
     try {
       const res = await axios.post(
