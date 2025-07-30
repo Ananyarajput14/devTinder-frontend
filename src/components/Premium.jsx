@@ -41,14 +41,41 @@ const verifyPremiumUser = async() => {
       rzp.open();
  } 
 
-  return isUserPremium ? (<div className="min-h-screen flex items-center justify-center">
-  <div className="card w-96 h-80 bg-base-300 card-lg shadow-sm">
-    <div className="card-body">
-      <h2 className="card-title">Yay!</h2>
-      <p>You're already a premium member</p>
+  return isUserPremium ? (<div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-100 to-pink-100">
+  <div className="card w-96 h-auto bg-white shadow-xl rounded-2xl border border-gray-200">
+    <div className="card-body items-center text-center">
+      <div className="text-green-500">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m1-5a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </div>
+      <h2 className="card-title text-2xl font-bold text-purple-700">You're a Premium Member!</h2>
+      <p className="text-gray-600 mt-2">Thank you for supporting DevTinder. You're now enjoying all the exclusive perks.</p>
+
+      <ul className="text-left mt-4 space-y-2 text-sm text-gray-700">
+        <li className="flex items-center">
+          <svg className="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+          Profile gets verified instantly
+        </li>
+        <li className="flex items-center">
+          <svg className="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+          Appear at top in search results
+        </li>
+        <li className="flex items-center">
+          <svg className="h-5 w-5 text-green-500 mr-2" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+          Priority support & faster matches
+        </li>
+      </ul>
     </div>
   </div>
 </div>
+
 ) : (
    <div className="min-h-screen flex items-center justify-center bg-base-200">
   <div className="flex flex-col md:flex-row items-center gap-8">
