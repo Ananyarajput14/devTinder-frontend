@@ -58,7 +58,7 @@ const Premium = () => {
         <div className="card-body items-center text-center">
           <div className="text-green-500">
             <img
-              src="https://i.pinimg.com/736x/a6/67/dc/a667dceb1de77e20c3909e203566e27d.jpg"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2FC8hgcPyHgARxq5cKxPmnVPz8_z7EXBkEal09dAoilgMBGugQi0XC85TFuI49AcyUx0&usqp=CAU"
               alt="Premium Badge"
               className="h-12 w-12 mb-2"
             />
