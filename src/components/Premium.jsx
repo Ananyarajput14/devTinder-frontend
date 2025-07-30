@@ -41,7 +41,7 @@ const verifyPremiumUser = async() => {
       rzp.open();
  } 
 
-  return isUserPremium ? (<div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-100 to-pink-100">
+  return isUserPremium ? (<div className="min-h-screen flex items-center justify-center bg-base-100">
   <div className="card w-96 h-auto bg-white shadow-xl rounded-2xl border border-gray-200">
     <div className="card-body items-center text-center">
       <div className="text-green-500">
