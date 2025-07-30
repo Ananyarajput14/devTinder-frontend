@@ -58,7 +58,7 @@ const Premium = () => {
         <div className="card-body items-center text-center">
           <div className="text-green-500">
             <img
-              src="https://in.pinterest.com/pin/785807834986415978/"
+              src="https://i.pinimg.com/736x/a6/67/dc/a667dceb1de77e20c3909e203566e27d.jpg"
               alt="Premium Badge"
               className="h-12 w-12 mb-2"
             />
