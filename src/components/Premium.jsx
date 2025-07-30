@@ -12,7 +12,7 @@ useEffect(()=>{
 },[]);
 
 const verifyPremiumUser = async() => {
-  const res= await axios.get(BASE_URL+ "/payment/verify",{withCredentials:true});
+  const res= await axios.get(BASE_URL+ "/premium/verify",{withCredentials:true});
  if(res.data.isPremium){
     setIsUserPremium(true);
   }
