@@ -32,15 +32,14 @@ const Body = () => {
       fetchUser();
     }
   }, []);
-  return (
-    <div>
+ return (
+    <div className="min-h-screen flex flex-col">
       <Navbar />
-      <div className="pt-20">
+      <div className="flex-grow pt-20">
         <Outlet />
       </div>
       <Footer />
     </div>
   );
 };
-
 export default Body;

@@ -53,17 +53,22 @@ const Navbar = () => {
               >
                 <li>
                   <Link to="/profile" className="justify-between hover:bg-gray-800 rounded-md p-2">
-                    Profile <span className="badge badge-success">New</span>
+                    Profile 
                   </Link>
                 </li>
                 <li>
                   <Link to="/connections" className="justify-between hover:bg-gray-800 rounded-md p-2">
-                    Connections <span className="badge badge-error">💗</span>
+                    Connections 
                   </Link>
                 </li>
                 <li>
                   <Link to="/requests" className="justify-between hover:bg-gray-800 rounded-md p-2">
-                    Requests <span className="badge badge-warning">👁️</span>
+                    Requests 
+                  </Link>
+                </li>
+                    <li>
+                  <Link to="/premium" className="justify-between hover:bg-gray-800 rounded-md p-2">
+                    Premium 
                   </Link>
                 </li>
                 <li>
