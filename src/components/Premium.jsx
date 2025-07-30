@@ -42,7 +42,7 @@ const verifyPremiumUser = async() => {
  } 
 
   return isUserPremium ? (<div className="min-h-screen flex items-center justify-center">
-  <div className="card w-96 bg-base-300 card-lg shadow-sm">
+  <div className="card w-96 h-80 bg-base-300 card-lg shadow-sm">
     <div className="card-body">
       <h2 className="card-title">Yay!</h2>
       <p>You're already a premium member</p>
