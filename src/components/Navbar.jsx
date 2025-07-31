@@ -57,6 +57,11 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
+                  <Link to="/" className="justify-between hover:bg-gray-800 rounded-md p-2">
+                    Feed 
+                  </Link>
+                </li>
+                <li>
                   <Link to="/connections" className="justify-between hover:bg-gray-800 rounded-md p-2">
                     Connections 
                   </Link>

@@ -3,11 +3,11 @@ import { BASE_URL } from "../utils/constants";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addConnection, removeConnection } from "../utils/connectionSlice";
+import { Link } from "react-router-dom";
 
 const Connections = () => {
  
   const connections = useSelector((store) => store.connection);
-  console.log(connections);
   const dispatch = useDispatch();
   
   const fetchConnections = async () => {
@@ -60,6 +60,9 @@ const Connections = () => {
               {age && gender && <p>{age + " " + gender}</p>}
               <p>{about}</p>
             </div>
+            <Link to={"/chat/"+_id}>
+              <button className="btn ml-72 w-28 text-lg bg-slate-600 text-white">Chat</button>
+              </Link>
           </div>
         );
       })}
